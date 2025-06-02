@@ -18,7 +18,7 @@ def test_greeting_default():
 
 
 
-import calculator
+
 import pytest
 
 
