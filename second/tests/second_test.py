@@ -15,3 +15,15 @@ def test_greeting_default():
 # continue by using assert
 # add your changes: git add second/tests/second_test.py
 # commit your changes using commit message conventions (https://inpred.github.io/24-03_bioinfo_ws/#19): git commit -m "test: <your commit message>"
+
+
+
+import calculator
+import pytest
+
+
+def test_greeting_raise():
+    with pytest.raises(TypeError):
+        assert greeting('Gertrude', 8)
+
+
